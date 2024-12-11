@@ -1,0 +1,23 @@
+{
+  "name": "privlol-website",
+  "version": "1.0.0",
+  "description": "The official website for privlol",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privlol/website.git"
+  },
+  "author": "PrivLol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/privlol/website/issues"
+  },
+  "homepage": "https://github.com/privlol/website#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

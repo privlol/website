@@ -1,0 +1,5 @@
+services:
+  web:
+    build: src
+    environment:
+      - SERVICE_FQDN_PRIVLOLWEBSITE_3000
