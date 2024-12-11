@@ -20,7 +20,7 @@ app.use(cors({
 app.use(xss());
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     res.send('I hope you are enjoying this in wayback machine!');
