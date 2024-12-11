@@ -1,6 +1,6 @@
 services:
   web:
-    image: ghcr.io/privlol/website:latest
+    image: ghcr.io/privlol/website:main
     environment:
       - SERVICE_FQDN_PRIVLOLWEBSITE_3000
     healthcheck:
