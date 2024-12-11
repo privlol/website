@@ -1,16 +1,26 @@
 <template>
   <v-container class="fill-height" justify="center" align="center">
+    
     <v-row justify="center">
       <v-col cols="12" md="8" lg="6">
-        <v-card class="text-center">
-          <v-card-title>
-            <h1>Priv lol</h1>
-          </v-card-title>
-          <v-card-text>
-            <div class="typing-animation">
-              <span ref="typedText"></span>
-            </div>
+      <v-alert type="warning" class="mb-4">
+        Hey man, this site is brand new it basically doesn't work so don't complain!
+      </v-alert>
+      
+      <v-card class="text-center font-weight-bold">
+        <v-card-title>
+        <h1>Priv lol</h1>
+        </v-card-title>
+        <v-card-text>
+        <div class="typing-animation">
+          <span ref="typedText"></span>
+        </div>
           </v-card-text>
+          <v-card-actions>
+            <v-btn color="red" to="/about" disabled>Docs</v-btn>
+            <v-btn color="red" to="/services" disabled>Services</v-btn>
+            <v-btn color="red" to="/contact" disabled>Contact</v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -18,9 +28,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
 import Typed from 'typed.js';
-import { tr } from 'vuetify/locale';
 
 const typedText = ref(null);
 
@@ -97,8 +105,6 @@ onMounted(() => {
     cursorChar: '_',
   });
 });
-
-
 </script>
 
 <style scoped>
